@@ -3,3 +3,7 @@
 	只需要执行下面命令就可以解决：
 git config --global http.sslVerify false
 
+
+#2.台式机始终无法push或clone的问题，有504、无法连接等报错
+	取消代理
+git config --global http.prox ''

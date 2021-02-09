@@ -81,3 +81,27 @@ git remote add origin https://github.com/Yan-VCAST/learngit.git
 git branch -M main
 git push -u origin main
 
+
+
+git clone https://github.com/Yan-VCAST/allien_invasion.git
+# 克隆命令用git clone
+
+git checkout -b dev
+# 创建并切换到dev分支，相当于下面2条命令：
+# git branch dev
+# git checkout dev
+# git checkout有可能造成误解，使用"git switch -c"(功能选项不是-b，而是-c)更容易理解
+
+git branch
+# 列出所有分支，且当前分支前面会有一个*星号
+
+git checkout master
+# 切换回master分支
+# git checkout有可能造成误解，使用git switch更容易理解
+git merge dev
+# 合并指定dev分支到当前master分支；任务反馈中有“Fast-forward”信息，
+# 表示此次合并是“快进模式”
+git branch -d dev
+# 合并完成后，放心删除dev分支
+git branch
+# 查看branch，看不到dev了

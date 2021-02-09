@@ -90,7 +90,8 @@ git checkout -b dev
 # 创建并切换到dev分支，相当于下面2条命令：
 # git branch dev
 # git checkout dev
-# git checkout有可能造成误解，使用"git switch -c"(功能选项不是-b，而是-c)更容易理解
+# "git checkout -b"有可能与“git checkout --”（删除工作区修改）造成误解
+# 使用"git switch -c"(功能选项不是-b，而是-c)更容易理解
 
 git branch
 # 列出所有分支，且当前分支前面会有一个*星号
